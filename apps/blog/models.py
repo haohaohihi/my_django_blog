@@ -53,7 +53,7 @@ class Blog(models.Model):
         return reverse('blog:blog_detail', args=(self.id, self.link))
 
     def get_full_url(self):
-        return "ipotato.cc" + reverse('blog:blog_detail', args=(self.id, self.link))
+        return "http://ipotato.cc" + reverse('blog:blog_detail', args=(self.id, self.link))
 
     def __str__(self):
         return self.title
